@@ -58,3 +58,5 @@ $route['translate_uri_dashes'] = FALSE;
 // HOMEPAGE
 $route['myController/modalAdd'] = 'MyController/modalAdd';
 $route['myController/Schedule'] = 'MyController/Schedule';
+
+$route['myController/loadTranMd'] = 'Schedule/loadTrainModal';

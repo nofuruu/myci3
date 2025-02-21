@@ -54,9 +54,11 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
+// Auth Routes
+$route['login'] = 'loginController/index';
+$route['register'] = 'loginController/register';
 
 // HOMEPAGE
 $route['myController/modalAdd'] = 'MyController/modalAdd';
 $route['myController/Schedule'] = 'MyController/Schedule';
-
-$route['myController/loadTranMd'] = 'Schedule/loadTrainModal';
+$route['view/loadTrainModal'] = 'Schedule/loadTrainModal';

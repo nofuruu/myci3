@@ -12,8 +12,8 @@ class myController extends CI_Controller
 
     public function modalAdd()
     {
-        $CONTENT = $this->load->view('modal', [], true);  // Load modal view sebagai string
-        echo json_encode(['CONTENT' => $CONTENT]);  // Kirimkan response dalam format JSON dengan key "CONTENT"
+        $CONTENT = $this->load->view('modal', [], true); 
+        echo json_encode(['CONTENT' => $CONTENT]); 
     }
     
     public function insertKendaraan()

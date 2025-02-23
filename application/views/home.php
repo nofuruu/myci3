@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-    <title>Home</title>
-</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<?php $this->load->view('template/sidebar.php'); ?>
+<?php $this->load->view('template/footer'); ?>
 <style>
-
-  
-    /* .home-content {
+    .home-content {
         padding: 20px;
-        background-color:rgb(175, 175, 175);
+        background-color: rgb(229, 226, 226);
         min-height: 100vh;
-    } */
+        margin-left: 60px;
+        transition: margin-left 0.3s ease;
+
+    }
 
     .main-card {
         background-color: #fff;
@@ -82,19 +76,11 @@
         object-position: center;
     }
 </style>
-
-<body>
-    <?php $this->load->view('template/navbar.php'); ?>
-    
-    <?php $this->load->view('template/sidebar.php'); ?>
-
-    <?php $this->load->view('template/footer'); ?>
-
-    <div class="home-content">
-        <div class="main-card">
-            <div class="container-header mb-4">
-            </div>
-            <div class="row g-4">
+<div class="home-content">
+    <div class="main-card">
+        <div class="container-header mb-4">
+        </div>
+        <div class="row g-4">
 
             <section id="hero" style="position:relative;">
                 <div id="carouselExample" class="carousel slide">
@@ -103,10 +89,10 @@
                             <img src="https://www.nationalgeographic.com/content/dam/expeditions/landing-pages/Rail/hero-rail-asia.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://www.nationalgeographic.com/content/dam/expeditions/landing-pages/Rail/hero-rail-asia.jpg" class="d-block w-100" alt="...">
+                            <img src="https://pbs.twimg.com/media/EovBTPUXEAgDGUo.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://www.nationalgeographic.com/content/dam/expeditions/landing-pages/Rail/hero-rail-asia.jpg" class="d-block w-100" alt="...">
+                            <img src="https://i.redd.it/u6rxthrum7c61.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -124,56 +110,47 @@
                         <p style="font-size: 1.5rem; line-height: 1.5;">Get the best train experience with us</p>
                     </div>
                 </div>
-
-                
-                </section>
-
-
-                <div class="col-md-4">
-                    <div class="card card-item text-center">
-                        <div class="icon">
-                            <i class="fas fa-train"></i>
-                        </div>
-                        <h5 class="card-title">Add Train Schedule</h5>
-                        <button class="btn btn-card mt-3" onclick="addSchedule()">Add Schedule</button>
+            </section>
+            <div class="col-md-4">
+                <div class="card card-item text-center">
+                    <div class="icon">
+                        <i class="fas fa-train"></i>
                     </div>
+                    <h5 class="card-title">Add Train Schedule</h5>
+                    <button class="btn btn-card mt-3" onclick="addSchedule()">Add Schedule</button>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card card-item text-center" style="background: rgb(28, 107, 255);">
-                        <div class="icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h5 class="card-title">View Train Schedule</h5>
-                        <button class="btn btn-card mt-3">View Schedule</button>
+            <div class="col-md-4">
+                <div class="card card-item text-center" style="background: rgb(28, 107, 255);">
+                    <div class="icon">
+                        <i class="fas fa-clock"></i>
                     </div>
+                    <h5 class="card-title">View Train Schedule</h5>
+                    <button class="btn btn-card mt-3">View Schedule</button>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card card-item text-center" style="background:rgb(50, 50, 51);">
-                        <div class="icon">
-                            <i class="fas fa-cog"></i>
-                        </div>
-                        <h5 class="card-title">Manage Schedule</h5>
-                        <button class="btn btn-card mt-3">Manage</button>
+            <div class="col-md-4">
+                <div class="card card-item text-center" style="background:rgb(50, 50, 51);">
+                    <div class="icon">
+                        <i class="fas fa-cog"></i>
                     </div>
+                    <h5 class="card-title">Manage Schedule</h5>
+                    <button class="btn btn-card mt-3">Manage</button>
                 </div>
-
-
             </div>
         </div>
     </div>
+</div>
 
-</body>
 
-</html>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-
 <script>
+
     function addSchedule() {
         $.ajax({
             url('<?= base_url(uri_string() . '/loadTrainModal') ?>'),

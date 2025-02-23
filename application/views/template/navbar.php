@@ -1,53 +1,73 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-evangelion">
   <div class="container-fluid">
     <div class="brand-container">
-      <a class="navbar-brand" href="<?= base_url() ?>">Argo Ngawi</a>
-      <p class="header-description mb-0">Your reliable train access</p>
+      <a class="navbar-brand">aaaaaaaa</a>
     </div> 
-    <div class="d-flex align-items-center">
-      <a class="nav-link" id="loginBtn" href="<?= base_url(uri_string().'login') ?>">Login</a>
-      <div class="vr mx-2"></div>
-      <a class="nav-link" id="registerBtn" href="<?= base_url('register') ?>">Register</a>
-    </div>
   </div>
 </nav>
 
 <style>
-   .brand-container {
+  .navbar-evangelion {
+    background-color:rgb(123, 123, 123); 
+    padding: 14px 20px;
+    border-radius: 30px;
+  }
+  .brand-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .navbar-brand {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: large;
+    font-family: 'Orbitron', sans-serif;
+    color: #a020f0; /* Evangelion Purple */
+    font-weight: 700;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 0;
+    letter-spacing: 2px;
   }
 
   .header-description {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: small;
-    margin-top: -5px;
-  }
-  .vr {
-    height: 24px;
-    background-color: #dee2e6;
-    width: 1px;
+    font-family: 'Orbitron', sans-serif;
+    color: #ccc;
+    font-size: 0.8rem;
+    margin-top: -2px;
     opacity: 0.8;
   }
 
+  /* Navigation Links */
   .nav-link {
-    color: #333;
+    color: #dcdcdc;
+    font-size: 1rem;
+    font-weight: 500;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
   }
 
   .nav-link:hover {
-    color: #0d6efd;
+    color: #a020f0; /* Purple glow effect */
+    text-shadow: 0px 0px 10px #a020f0;
+  }
+
+  /* Register Button */
+  .btn-register {
+    background: #920000;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-register:hover {
+    background: #ff3333;
+    box-shadow: 0px 0px 10px #ff3333;
+  }
+
+  /* Vertical Line */
+  .vr {
+    height: 24px;
+    background-color: #666;
+    width: 1px;
   }
 </style>

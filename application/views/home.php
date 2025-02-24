@@ -85,10 +85,6 @@
 
 <body>
     <?php $this->load->view('template/navbar.php'); ?>
-    
-    <?php $this->load->view('template/sidebar.php'); ?>
-
-    <?php $this->load->view('template/footer'); ?>
 
     <div class="home-content">
         <div class="main-card">
@@ -96,7 +92,7 @@
             </div>
             <div class="row g-4">
 
-            <section id="hero" style="position:relative;">
+            <section id="hero" style="position:relative;"></section>
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -164,6 +160,7 @@
         </div>
     </div>
 
+
 </body>
 
 </html>
@@ -179,6 +176,9 @@
             url('<?= base_url(uri_string() . '/loadTrainModal') ?>'),
             method: 'post',
             datatype: 'json',
+            data: {
+                id: id
+            },
             success: function(response) {
                 if (response.status == 'OK') {
                     $('#form-data').html(response.CONTENT);

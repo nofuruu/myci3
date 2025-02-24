@@ -61,4 +61,5 @@ $route['register'] = 'loginController/register';
 // HOMEPAGE
 $route['myController/modalAdd'] = 'MyController/modalAdd';
 $route['myController/Schedule'] = 'MyController/Schedule';
-$route['view/loadTrainModal'] = 'Schedule/loadTrainModal';
+
+$route['myController/loadTranMd'] = 'Schedule/loadTrainModal';
